@@ -231,10 +231,10 @@ mark{
 .navLink:not(:checked) {
 	position: relative;
 	display: inline-block;
-	padding: 10px;
-	width: 80px;
+	padding: 8px;
+	width: 70px;
 	font-size: 10px;
-	line-height: 20px;
+	line-height: 15px;
 	letter-spacing: 1px;
 	justify-content: center;
 	align-items: center;
@@ -314,8 +314,10 @@ mark{
 	.checkbox:not(:checked) + label {
 		margin: 0; 
 		margin-top: 2rem;
-		margin-bottom: 1.7rem;
+		margin-bottom: 0;
+		width: 60px;
 	}
+
   }
 
 .path {
@@ -413,8 +415,7 @@ mark{
 	width: 100%;
 	color: var(--white);
 	-webkit-transition: all 300ms linear;
-	transition: all 300ms linear; 
-
+	transition: all 300ms linear;
 }
 
 .search-icon {
@@ -548,18 +549,67 @@ mark{
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 800px) {
+	h3 {
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+	}
+
+	.button {
+		padding: 1rem 1.5rem;
+		font-size: 12px;
+		margin-right: 1rem;
+	}
+
+	.search:not(:checked),
+	.search:checked {
+		border: none;
+		font-size: 1rem;
+		padding: 0.8rem 2.3rem;
+		border-radius: 0.7rem;
+		outline: none; 
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.search-bar{
+		margin: 0rem 2rem;
+		margin-bottom: 12px;
 	
+	}
 	.navHome {
-		margin-right: 40%;
+		margin-right: 20%;
 	}
 	
 	.navHome p {
 		display: none
 	}
 	.cookie-icon {
-		margin-right: 60%;
+		margin-right: 40%;
+		height: 3.2rem;
+		width: 3.2rem;
 	}
+
+	p{
+		font-family: 'Poppins', sans-serif;
+		  font-size: 15px;
+		  line-height: 30px;
+		  color: var(--white);
+		  letter-spacing: 1px;
+		  font-weight: 500;
+		  -webkit-transition: all 300ms linear;
+		  transition: all 300ms linear; 
+	  }
+	  li {
+		font-family: 'Poppins', sans-serif;
+		  font-size: 15px;
+		  line-height: 30px;
+		  color: var(--white);
+		  letter-spacing: 1px;
+		  font-weight: 500;
+		  -webkit-transition: all 300ms linear;
+		  transition: all 300ms linear; 
+	  }
 }
 
 .special-icon {

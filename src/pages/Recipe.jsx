@@ -94,13 +94,35 @@ const DetailWrapper = styled(motion.div)`
   li {
     text-align: left;
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
 
   ul {
     margin-top: 2rem;
   }
 
+  @media only screen and (max-width: 900px) {
+    li {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  ul {
+    margin-top: 1.5rem;
+  }
+
+  .in-text {
+    margin-top: 1.5rem;
+    
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  }
   @media only screen and (max-width: 1250px) {
     display: flex; 
     flex-direction: column;

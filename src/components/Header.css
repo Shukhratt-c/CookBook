@@ -55,18 +55,19 @@ a {
 
 @media only screen and (max-width: 992px) {
   .special-section {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    z-index: 82;
   }
 
   #gooey-button {
-    padding: 0.9rem;
+    padding: 0.7rem;
     z-index: 30;
   }
 
   #gooey-button p {
     z-index: 40;
-    font-size: 14px;
+    font-size: 12px;
 
   }
   

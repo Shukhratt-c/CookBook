@@ -70,41 +70,32 @@ const Wrapper = styled.div`
   `;
 
 const Card = styled.div`
-  min-height: 15rem;
-  border-radius: 2rem;
+  min-height: 22rem;
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
-  margin: 0;
-  cursor: pointer;
+  gap: 3px;
+  margin: 12px;
 
-
-  @media only screen and (min-width: 768px) {
-    /* For mobile phones: */
-    min-height: 15rem;
-    border-radius: 1rem;
+  @media only screen and (max-width: 1000px) {
+    min-height: 17rem;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
-    gap: 3px;
-    margin: 0;
+    margin: 8px;
   }
 
-  @media only screen and (min-width: 1000px) {
-    min-height: 22rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
-    gap: 3px;
-    margin: 1rem;
-  }
-
+  
 
   img {
-    border-radius: 2rem;
+    border-radius: 15px;
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
     object-fit: cover;
+    filter: brightness(50%);
 
   }
 
@@ -115,23 +106,65 @@ const Card = styled.div`
     bottom: 0%;
     transform: translate(-50%, 0%);
     color: white;
-  	letter-spacing: 1px;
-    width: 100%;
     text-align: center;
     font-weight: 600;
     font-size: 1rem;
+  	letter-spacing: 1px;
+    width: 100%;
+    overflow: hidden;
     height: 40%;
-    display: felx;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+   
+    
+  }
 
-    @media only screen and (min-width: 600px) {
-      padding: 1rem;
+  @media only screen and (max-width: 750px) {
+    min-height: 12rem;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    margin: 2px;
+
+    &:hover {
+      img {
+
+      }
     }
 
+    img {
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      filter: brightness(60%);
 
+    }
 
+    .card-text {
+      position: absolute;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      padding: 0.1rem;
+      margin-left: 0.2rem;
+      filter: brightness(95%);
+      font-weight: 500;
+      height: 30%;
+      font-size: 15px;
+      text-align: left;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-top: 8px;
+
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
   }
 `;
 

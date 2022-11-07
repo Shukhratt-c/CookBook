@@ -1,9 +1,8 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import { TimeOut } from "../components/NotFound" ;
-import { motion } from "framer-motion";
-import Loader from '../components/Loader'
+import { TimeOut } from "../components/NotFound";
 
 
 
@@ -25,10 +24,6 @@ function Cuisine() {
         getCuisine(params.type)
         console.log(params.type)
     }, [params.type]);
-
-    if (cuisine.title === undefined) {
-        return <Loader />
-      }
 
   return (
     <Grid 

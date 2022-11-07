@@ -53,8 +53,8 @@ function Popular() {
 
                 <Card  key={recipe.id}>
                   <Link to={"/recipe/" + recipe.id}>
-                    <div className='card-text'>{recipe.title}</div>
                     <img src={recipe.image} alt="Img" />
+                    <div className='card-text'>{recipe.title}</div>
                   </Link>
                 </Card>
                 <Gradient />
@@ -73,40 +73,32 @@ const Wrapper = styled.div`
   `;
 
 const Card = styled.div`
-  min-height: 15rem;
-  border-radius: 2rem;
+  min-height: 22rem;
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
-  margin: 0;
+  gap: 3px;
+  margin: 12px;
 
-  @media only screen and (min-width: 768px) {
-    /* For mobile phones: */
-    min-height: 15rem;
-    border-radius: 1rem;
-    position: relative;
-    gap: 3px;
-    margin: 0;
-
-  }
-
-  @media only screen and (min-width: 1000px) {
-    min-height: 22rem;
-    border-radius: 1rem;
+  @media only screen and (max-width: 1000px) {
+    min-height: 17rem;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
-    gap: 3px;
-    margin: 1rem;
+    margin: 8px;
   }
 
+  
 
   img {
-    border-radius: 2rem;
+    border-radius: 15px;
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
     cursor: pointer;
     object-fit: cover;
+    filter: brightness(50%);
 
   }
 
@@ -117,25 +109,65 @@ const Card = styled.div`
     bottom: 0%;
     transform: translate(-50%, 0%);
     color: white;
-    width: 100%;
     text-align: center;
     font-weight: 600;
     font-size: 1rem;
   	letter-spacing: 1px;
+    width: 100%;
+    overflow: hidden;
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
     cursor: pointer;
+   
+    
+  }
 
+  @media only screen and (max-width: 750px) {
+    min-height: 12rem;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    margin: 2px;
 
-    @media only screen and (min-width: 600px) {
-      padding: 1rem;
+    &:hover {
+      img {
+
+      }
     }
 
+    img {
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      filter: brightness(60%);
 
+    }
 
+    .card-text {
+      position: absolute;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      padding: 0.1rem;
+      margin-left: 0.2rem;
+      filter: brightness(95%);
+      font-weight: 450;
+      height: 30%;
+      font-size: 15px;
+      text-align: left;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-top: 8px;
+
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
   }
 `;
 

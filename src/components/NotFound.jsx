@@ -40,6 +40,28 @@ const ErrorText = styled.div`
     h3 {
         font-size: 3rem;
     }
+  @media only screen and (max-width: 750px) {
+    margin-top: 2rem;
+
+    p {
+      margin-top: 1.5rem;
+      font-size: 15px;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .p2 {
+      font-size: 1rem;
+    }
+
+    img {
+      height: 30rem;
+      width: 22rem;
+    }
+  
+  }
 
 `;
 
