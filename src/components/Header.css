@@ -1,0 +1,245 @@
+.special-section {
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 0;
+  width: 100%; 
+  z-index: 50;
+}
+
+.nav-home {
+	text-align: left;
+	z-index: 70;
+	margin-right: 75%;
+
+}
+
+.spl-button {
+  text-align: right;
+  max-width: 64rem;
+}
+
+a {
+  text-decoration: none;
+  all: unset;
+}
+
+.special-svg {
+  z-index: 50;
+  position: absolute;
+  top: -4000px;
+  left: -4000px; }
+
+#gooey-button {
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: right;
+  border: none;
+  color: #0c1016;
+  filter: url("#gooey");
+  position: relative;
+  background-color: #00FF80;
+  z-index: 30;
+}
+#gooey-button p {
+  z-index: 30;
+  color: #0c1016;
+  font: bold;
+}
+
+@media only screen and (max-width: 992px) {
+  .special-section {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #gooey-button {
+    padding: 0.9rem;
+    z-index: 30;
+  }
+
+  #gooey-button p {
+    z-index: 40;
+    font-size: 14px;
+
+  }
+  
+}
+
+#gooey-button:focus {
+  outline: none; 
+}
+
+#gooey-button .bubbles {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  }
+#gooey-button .bubbles .bubble {
+  background-color: #00FF80;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1; 
+}
+#gooey-button .bubbles .bubble:nth-child(1) {
+  left: 83px;
+  width: 25px;
+  height: 25px;
+  animation: move-1 3.02s infinite;
+  animation-delay: 0.2s; }
+#gooey-button .bubbles .bubble:nth-child(2) {
+  left: 41px;
+  width: 25px;
+  height: 25px;
+  animation: move-2 3.04s infinite;
+  animation-delay: 0.4s; }
+#gooey-button .bubbles .bubble:nth-child(3) {
+  left: 19px;
+  width: 25px;
+  height: 25px;
+  animation: move-3 3.06s infinite;
+  animation-delay: 0.6s; }
+#gooey-button .bubbles .bubble:nth-child(4) {
+  left: 11px;
+  width: 25px;
+  height: 25px;
+  animation: move-4 3.08s infinite;
+  animation-delay: 0.8s; }
+#gooey-button .bubbles .bubble:nth-child(5) {
+  left: 12px;
+  width: 25px;
+  height: 25px;
+  animation: move-5 3.1s infinite;
+  animation-delay: 1s; }
+#gooey-button .bubbles .bubble:nth-child(6) {
+  left: 44px;
+  width: 25px;
+  height: 25px;
+  animation: move-6 3.12s infinite;
+  animation-delay: 1.2s; }
+#gooey-button .bubbles .bubble:nth-child(7) {
+  left: 12px;
+  width: 25px;
+  height: 25px;
+  animation: move-7 3.14s infinite;
+  animation-delay: 1.4s; }
+#gooey-button .bubbles .bubble:nth-child(8) {
+  left: 48px;
+  width: 25px;
+  height: 25px;
+  animation: move-8 3.16s infinite;
+  animation-delay: 1.6s; }
+#gooey-button .bubbles .bubble:nth-child(9) {
+  left: 28px;
+  width: 25px;
+  height: 25px;
+  animation: move-9 3.18s infinite;
+  animation-delay: 1.8s; }
+#gooey-button .bubbles .bubble:nth-child(10) {
+  left: 60px;
+  width: 25px;
+  height: 25px;
+  animation: move-10 3.2s infinite;
+  animation-delay: 2s; }
+
+@keyframes move-1 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -96px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-2 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -112px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-3 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -92px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-4 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -93px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-5 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -113px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-6 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -73px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-7 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -114px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-8 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -69px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-9 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -63px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
+
+@keyframes move-10 {
+  0% {
+    transform: translate(0, 0); }
+  99% {
+    transform: translate(0, -110px); }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0; } }
