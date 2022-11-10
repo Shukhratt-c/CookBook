@@ -60,7 +60,7 @@ const Grid = styled(motion.div)`
 
 @media only screen and (min-width: 720px) {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 
     p {
      display: none;
