@@ -23,6 +23,7 @@ function Cuisine() {
     useEffect(() => {
         getCuisine(params.type)
         console.log(params.type)
+        
     }, [params.type]);
 
   return (
@@ -33,15 +34,15 @@ function Cuisine() {
         transition={{ duration: 0.5 }}
 
     >
+        <p>{params.type} traditional dishes</p>
         {cuisine && cuisine.map((item) => {
             return(
-                <Card key={item.id}>
-                    <Link to={"/recipe/" + item.id}>
-                        <img src={item.image} alt={item.title} />
-                        <h4 className="h4-text">{item.title}</h4>
-                    </Link>
-
-                </Card>
+                    <Card key={item.id}>
+                        <Link to={"/recipe/" + item.id}>
+                            <img src={item.image} alt={item.title} />
+                            <h4 className="h4-text">{item.title}</h4>
+                        </Link>
+                    </Card>
             )
         })}
         {cuisine.length === 0 && <TimeOut /> } 
@@ -56,9 +57,25 @@ const Grid = styled(motion.div)`
     grid-gap: 3rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
+
+@media only screen and (min-width: 720px) {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    p {
+     display: none;
+    }
+  }
+
+  p {
+        text-align: left;
+        margin-left: 12px;
+        font-size: 15px;
+    }
     `;
 
 const Card = styled.div`
+
         margin-top: 4rem;
     img {
         width: 100%;
@@ -78,6 +95,9 @@ const Card = styled.div`
         padding: 1rem;
         cursor: pointer;
     }
+@media only screen and (max-width: 720px) {
+        margin-top: 1rem;
+}
 `
 
 export default Cuisine

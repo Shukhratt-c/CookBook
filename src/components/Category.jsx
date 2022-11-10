@@ -14,28 +14,36 @@ function Category() {
           <NavLink className={ path === "/cuisine/American" ? 'navLink active' : 'navLink'}   to={"/cuisine/American"}>
             <div className="path">
               <FaHamburger className="uil" />
-              American
+              <div>
+                American    
+              </div>
             </div>            
           </NavLink >
           
           <NavLink className={ path === "/cuisine/Italian" ? 'navLink active' : 'navLink'}  to={"/cuisine/Italian"}>
             <div className="path">
               <FaPizzaSlice className="uil" />
-              Italian
+              <div>
+                Italian
+              </div>
             </div>
           </NavLink>
 
           <NavLink className={ path === "/cuisine/British" ? 'navLink active' : 'navLink'}   to={"/cuisine/British"}>
             <div className="path">
               <SiCoffeescript className="uil" />
-              British
+              <div>
+                British
+              </div>
             </div>
           </NavLink >
 
           <NavLink className={ path === "/cuisine/Japanese" ? 'navLink active' : 'navLink'}   to={"/cuisine/Japanese"}>
             <div className="path">
               <GiChopsticks className="uil" />
-              Japanese
+              <div>
+                Japanese      
+              </div>
             </div>
           </NavLink >
         

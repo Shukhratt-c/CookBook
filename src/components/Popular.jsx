@@ -70,6 +70,10 @@ function Popular() {
 const Wrapper = styled.div`
   margin: 4rem 0rem;
 
+  @media only screen and (max-width: 750px) {
+    margin: 2rem 0rem;
+  }
+
   `;
 
 const Card = styled.div`
