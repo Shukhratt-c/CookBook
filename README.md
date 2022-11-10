@@ -10,4 +10,5 @@ This website uses [spoonacular](https://spoonacular.com/) food API. it has the d
 > - react splide
 > - styled components 
 > - react router dom 
+
 (React.js, JavaScript, HTML, CSS, deployed with [vercel](https://vercel.com/))
