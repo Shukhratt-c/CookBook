@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The purposde of this project is to practice React.js, API fetching, and any kinds of designing stuff .
 
 
+
+
+
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
