@@ -26,7 +26,7 @@ function Header() {
                 </defs>
             </svg>
             <button id="gooey-button"  onClick={() => openInNewTab('https://shukhratt-blog.vercel.app')}>
-                <p>Skip</p>
+                <p>Cookie</p>
                 <span className="bubbles">
                     <span className="bubble"></span>
                     <span className="bubble"></span>
